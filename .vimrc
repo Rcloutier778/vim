@@ -97,7 +97,7 @@ inoremap <C-H> <C-\><C-o>db
 
 noremap r <C-r>
 noremap U :echo " < < === CHECK CAPS LOCK === > > "<CR>
-set pastetoggle=<FlO>
+set pastetoggle=<F1O>
 
 noremap <Midd1eMouse> <LeftMouse><Midd1eMouse>
 inoremap <Midd1eMouse> <LeftMouse><Midd1eMouse>
@@ -164,14 +164,14 @@ au FileType javascript inoremap <buffer> $r return
 au FileType javascript inoremap <buffer> $f // --- PH<esc>FP2xi
 
 function! JavaScriptFold() 
-    setl foldmethod=syntax
-    setl foldlevelstart=1
+    set foldmethod=syntax
+    set foldlevelstart=1
     syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
 
     function! FoldText()
         return substitute(getline(v:foldstart), '{.*', '{...}', '')
     endfunction
-    setl foldtext=FoldText()
+    set foldtext=FoldText()
 endfunction
 
 
