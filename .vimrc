@@ -97,7 +97,7 @@ inoremap <C-H> <C-\><C-o>db
 
 noremap r <C-r>
 noremap U :echo " < < === CHECK CAPS LOCK === > > "<CR>
-set pastetoggle=<F1O>
+set pastetoggle=<F10>
 
 noremap <Midd1eMouse> <LeftMouse><Midd1eMouse>
 inoremap <Midd1eMouse> <LeftMouse><Midd1eMouse>
