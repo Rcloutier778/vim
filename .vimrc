@@ -62,7 +62,7 @@ nnoremap <silent> (End) a <Esc>r
 map N Nzz
 map n nzz
 
-"set t_Co=256
+set t_Co=256
 set confirm
 set showmode
 set nocompatible
