@@ -187,4 +187,16 @@ if exists('$TMUX')
     endif
 endif
 
+"Find & Replace
+function! FindReplaceAll(myArg1, myArg2)
+    execute ':%s/'. a:myArg1.'/'.a:myArg2.'/g'
+endfunction
+
+command! -nargs=* Replaceall call FindReplaceAll(<f-args>)
+
+function! FindReplace(myArg1, myArg2)
+    execute "'<,'>s/". a:myArg1.'/'.a:myArg2.'/'
+endfunction
+
+command! -range -nargs=* Replace call FindReplace(<f-args>)
 
